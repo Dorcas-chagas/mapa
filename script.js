@@ -18,6 +18,7 @@
         }).addTo(map);
 
         L.marker([pos.coords.latitude, pos.coords.longitude]).addTo(map)
+        
     }
 
     function error(err){
