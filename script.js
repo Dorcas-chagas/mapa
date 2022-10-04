@@ -18,7 +18,7 @@
         }).addTo(map);
 
         L.marker([pos.coords.latitude, pos.coords.longitude]).addTo(map)
-        
+
     }
 
     function error(err){
@@ -26,7 +26,7 @@
     }
 
     var watchId = navigator.geolocation.watchPosition(success, error, {
-        enableHighAccuracy: true,
+        //enableHighAccuracy: true,
         timeout: 5000
     });
 
