@@ -7,10 +7,10 @@
         h2.textContent = `Latitude: ${pos.coords.latitude}, Longitude ${pos.coords.longitude}`;
 
         if (map === undefined) {
-            map = L.map('map').setView([pos.coords.latitude, pos.coords.longitude], 13);
+            map = L.map('map').setView([pos.coords.latitude, pos.coords.longitude], 16);
         }else {
             map.remove();
-            map = L.map('map').setView([pos.coords.latitude, pos.coords.longitude], 13);
+            map = L.map('map').setView([pos.coords.latitude, pos.coords.longitude], 16);
         }
 
         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
